@@ -109,5 +109,17 @@ sns.boxplot(x='sepal_width',data=values)
 ![image](https://github.com/user-attachments/assets/d4285a1a-9ee9-40f8-8daa-20d2e3b5764e)
 
 ## Z-SCORE:
+```
+import scipy.stats as stats
+import numpy as np
+z=np.abs(stats.zscore(ir['sepal_width']))
+z
+```
+![image](https://github.com/user-attachments/assets/90f1184c-02b8-484b-8073-75402d18f64b)
+```
+ir=ir[z<0.8]
+ir
+```
+![image](https://github.com/user-attachments/assets/6e07376f-7500-4364-9f49-e4fcdb9f1c39)
 
 
